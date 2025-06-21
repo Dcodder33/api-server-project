@@ -93,12 +93,25 @@ Interactive API docs are available at:
 
 ---
 
-## How to Interact with Your API
+## How to Test the API
 
-The easiest way to interact with your API is using the interactive Swagger UI:
+You can test the API in two ways:
 
-1. Start your server.
-2. Open your browser and go to: [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
-3. Use the Swagger UI to view documentation, try out endpoints, and see sample requests and responses.
+### 1. Using Swagger UI (Recommended)
+- Start your server.
+- Open your browser and go to: [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
+- Use the Swagger UI to view documentation, try out endpoints, and see sample requests and responses interactively.
+
+### 2. Using the Automated Test Script
+- Make sure you have [axios](https://www.npmjs.com/package/axios) installed:
+  ```
+  npm install axios
+  ```
+- Start your server.
+- Run the test script:
+  ```
+  node test.js
+  ```
+- This script will automatically add, retrieve, update, and delete a book, printing the results to your console.
 
 ---
